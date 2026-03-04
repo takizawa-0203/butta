@@ -1,0 +1,1971 @@
+@charset "UTF-8";
+
+/* グローバル設定 */
+*{
+	box-sizing: border-box;
+	/* border: 1px solid red; */
+}
+
+html {
+	font-size:100%;/*=16px*/
+	 scroll-behavior: smooth;
+}
+body {
+	min-width:320px;
+	color: #6b563b;
+	background-image:url(../images/background.png);
+	font-family: 'Arima','Momochidori Wide', 'Momochidori', 'zen', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+img {
+	max-width:100%;
+}
+h2 {
+	/*margin-bottom:1em;*/
+	font-size:5.5em;/*=24px(基準の16pxの1.5文字分)*/
+	font-weight:bold;
+	color:#6b563b;
+	margin-bottom:0;
+}
+
+p {
+	font-size:1em;
+	}
+
+
+
+.title-en{
+	font-size:4rem;
+	margin-bottom:-2vh ;
+	line-height: 1.25;
+}
+
+.title-jp{
+	font-size:0.2em;
+	font-weight: lighter;
+}
+
+.title{
+	padding: auto;
+	text-align: center;
+}
+
+span{
+	display: block;
+}
+
+/* 外枠 */
+.wrapper {
+	width: 100%;
+	margin:0 auto;
+	display: flex;
+}
+
+/* ヘッダー */
+.header_side {
+	width: 200px;
+	height: 100vh;
+	margin-top: 0;
+	position: fixed;
+	z-index: 9999;
+	padding:2rem 2rem;
+	background-image:url(../images/navbackground.png);
+	}
+
+
+
+/* ナビゲーション */
+.nav_main ul {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin:0 auto 12vh auto;
+	padding:0;
+}
+
+.nav_main ul li {
+	/*width:25%;*/
+	display: flex;
+	justify-content: left;
+letter-spacing:0.1em;
+writing-mode: vertical-rl;
+}
+
+.nav_main ul li a {
+	color:#fff;
+	text-decoration: none;
+	font-size:0.9em;
+	font-weight: medium;
+	}
+
+.nav_main ul li a:hover {
+	color:#aaa;
+}
+
+.logo {
+	margin-bottom: 3rem;
+	width: 100%;
+}
+
+.logo img {
+	width: 100%;
+}
+
+.nav_sns{
+	text-align: center;
+	font-size:0.8em;
+	letter-spacing: 0.05rem;
+}
+
+.nav_sns a{
+	text-decoration: none;
+	color:#fff;margin-top: 0.5rem;
+}
+
+.nav_sns img{
+	width: 35%;
+	display: inline-block; 
+	background-color:#E44A55 ;
+	border-radius: 30px;
+	padding: 5px;
+	transition: transform .6s ease;
+}
+
+.nav_sns img:hover {
+	background-color:#ea6c75 ;
+	transform: scale(1.1);
+}
+
+
+#hamburger:checked ~ .hamburger-menu_bg {
+  display: block;
+}
+
+.hamburger-menu_input{
+	display: none;
+}
+
+/* メインコンテンツ */
+main{
+	margin:0px auto 0px 200px;
+	width: calc(100% - 200px);
+}
+
+.keylogo img{
+	height:75vh;
+	align-items: center;
+	margin-top: 10vh;
+	}
+
+.main_photo{
+	background-image: url("../images/Key_tenpo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover; /* 画像を横幅いっぱいに表示 */
+	background-position: center; 
+	 width:100%;                              
+    height:100vh; 
+	text-align: center;
+}
+
+/* NEWS */
+.news{
+	padding: 2rem;
+}
+
+.article_news{
+	padding: 2em;
+	background-image: url("../images/newsback.png");
+	background-repeat: no-repeat;
+	 /* 画像を横幅いっぱいに表示 */
+	width:100%;                              
+  	background-position: center;
+	background-size: 100% 100%;
+	display: -webkit-box; 
+	display: flex;
+}
+
+.title_news .title-en{
+	font-size: 0.5em;
+	line-height: 1.5;
+}
+
+
+.title_news .title-jp{
+	font-size: 0.17em;
+	font-weight: lighter;
+}
+
+.title_news{
+	margin-left: 5vw;
+}
+
+.t-news__block{
+	text-align: left;
+}
+
+.news_haikei{
+	background-image: url("../images/butta_logo_blown.png");
+	text-align: center;
+	vertical-align: middle;
+	background-size: cover;
+}
+
+.news__block{
+	width:60%;
+	height:100%;
+	margin: auto;
+	vertical-align: middle;
+	}
+
+.news__block ul li a {
+	text-decoration: none;
+	color:#5c4f42;
+	vertical-align: middle;
+}
+
+.news_entry{
+	width: 105%;
+	top:12px;
+	border-top: 1px solid;
+	color:#5c4f42;
+	padding:0;
+	}
+
+.t-news-entry__item{
+	list-style: none;
+	border-bottom: 1px solid; 
+    color:#5c4f42;
+	transition: transform .5s ease;
+	}
+
+.t-news-entry__item:hover{
+	background: rgba(17, 17, 17, 0.02)
+}
+
+.t-entry-item__status{
+	width:25%;
+}
+
+.t-entry-item__name{
+	width:65%;
+	font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.t-news-entry__item__inner{
+	flex-wrap: wrap;
+	display: flex;
+	align-items: center;
+	}
+
+.yazirushi{
+	vertical-align: middle;
+	margin-left: 0.5rem;
+}
+
+/* ABOUT US*/
+.article_about{
+	padding: 2em;
+	padding-bottom: -5em;
+	margin-bottom: 8rem;
+	}
+
+.title_about{
+	text-align: center;
+}
+
+.t-about__block{
+	text-align: left;
+	display: inline-block;
+}
+
+
+
+.about__all{
+	display: flex;
+	padding-left: 5em;
+}
+
+.about_tenpo{
+	width: 50%;
+}
+
+.about_tenpo img{
+	border-radius: 10px;
+	width: 65vw;
+}
+
+.about__block::after{
+	 content: '';
+  display: inline-block;
+  width: 200px;
+  height: 130px;
+  background-image: url(../images/gyouza.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+  position: absolute;
+  top: -30px;
+  right:-50px;
+  transform: rotate(10deg);
+}
+
+.about__block{
+	background-color: #fFFDF6;
+	border-radius: 10px;
+	color: #5c4f42;
+	padding: 2em;
+	width: 50%;
+	height:fit-content ;
+	position:relative;
+	top: 11em;
+	left: -6.5em;
+}
+.about__block h3{
+	font-size: 1.8em;
+	margin-top: -1em;
+}
+
+.about__block h4{
+	font-size: 1.3em;
+	margin-top: 0.5em;
+}
+
+.about__block p{
+	margin-bottom:2.2em ;
+	font-size: 0.79em;
+	font-weight: normal;
+	 font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.about_gyouza {
+	position:relative;
+	top:-16em;
+	left: 57em;
+	margin-top: -8em; 
+	width: 19%;
+	height:fit-content ;
+	transform: rotate(10deg)
+
+}
+
+
+
+.about_botan{
+	left: auto;
+	top: 35px;
+	background-color: #f2e52d ;
+	border: #f2e52d  0.1rem solid;
+	padding: 7px 25px;
+	width: fit-content;
+	border-radius: 35px;
+	transition: transform .6s ease;
+}
+
+.about_botan:hover{
+	background-color: #F9F5E5;
+	border: #f2e52d  0.1rem solid;
+	transform: translateX(0.5rem);
+}
+
+.btn-text_about p{
+	font-size: 0.85em;
+	font-weight:600 ;
+	font-family:'Arima' ;
+	text-decoration: none;
+	color:#5c4f42;
+	text-align: center;
+	vertical-align: middle;
+	margin: auto;
+	}
+
+.t-btn_about div{
+	display: inline-block;
+}
+
+.btn-yazirushi{
+	text-align:right;
+	padding-left: 1rem;
+}
+
+/*メニュー*/
+.article_menu{
+	padding: 2em;
+	padding-bottom:8em;
+}
+
+.title_menu{
+	text-align: center;
+}
+
+.title-menu__block{
+	text-align: left;
+	display: inline-block;
+}
+
+.t-menu__block ul {
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 0;
+	gap: 0rem;
+}
+
+.t-menu__block li {
+    list-style: none;
+    width: 350px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.t-menu__block li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+	
+}
+
+.t-menu__block li img {
+    width: 100%;
+    height: 100%;
+	transform: scale(0.9);
+    object-fit: cover;
+    display: block;
+	transition: all .4s ease;
+	border-radius: 25rem;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.238);
+}
+
+
+.menu_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+	font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.t-menu__block li:hover img{
+    transform: scale(1);
+	border-radius: 0.45rem;
+}
+
+.menu_all_btn{
+	display: flex;
+	left: auto;
+	top: 35px;
+	background-color: #f2e52d ;
+	 border: 0.1rem solid #f2e52d ;
+	padding: 7px 25px;
+	width: fit-content;
+	border-radius: 35px;
+	transition: transform .6s ease;
+	margin: auto;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.086);
+}
+
+.menu_all_btn:hover{
+	background-color: #F9F5E5;
+	border: #f2e52d 0.1rem solid;
+	transform: translateX(0.5rem);	
+}
+
+.btn_menu p{
+	text-align: center;
+	vertical-align: middle;
+		font-size: 0.85em;
+	font-weight:600;
+	text-decoration: none;
+	color:#5c4f42;
+	margin: auto;
+}
+
+.t-btn_menu div{
+	display: inline-block;
+}
+
+.btn-yazirushi{
+	text-align:right;
+}
+
+.btn-yazirushi img{
+	vertical-align:middle;
+}
+
+/* 店舗情報*/
+.title_info{
+	text-align: center;
+}
+
+.title-info__block{
+	text-align: left;
+	display: inline-block;
+	color: #fffffc;
+}
+
+.article_info{
+	background-image:url(../images/infobackground.png);
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 2em;
+}
+
+.info__block{
+	display: flex;
+	padding: 2em 2em 2em 6em;
+	margin-bottom: 6em;
+}
+
+.googlemaps{
+	position: relative;
+	aspect-ratio: 4/3;
+	max-width: 1000px;
+  width: 100%;
+  height: auto;
+   
+}
+
+.googlemaps iframe{
+	 position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.info__text{
+	position:relative;
+	display: inline-block;
+	top:7em;
+	left: -5em;
+	padding: 2em;
+	margin-top: 0;
+	background-color: #FFF;
+	border-radius: 10px;
+	width: 45vw;
+	height: fit-content;
+	line-height: 1.9;
+}
+
+.info_midashi-t{
+	font-size: 1.3em;
+	font-weight: bold;
+	margin-top: 0em;
+	vertical-align: top;
+}
+
+.info__blocktext td{
+	padding-left:1.5em ;
+}
+
+.info__blocktext th{
+	vertical-align:top;
+}
+
+.info__blocktext{
+	font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+	font-size: .79EM;
+	margin-top: 5em;
+	text-align:left;
+	display: inline-block;
+}
+
+
+/* フッター */
+.footer_block_all{
+	background-color: #323231;
+	padding: 4em 6.5em 0em 6.5em;
+}
+
+.footer_block{
+	display: flex;
+	justify-content: space-between;
+	}
+
+.footer_block_right {
+	width: 20vw;
+	height: auto;
+}
+
+.footer_block_left{
+	  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.nav_footer{
+	display: flex;
+	}
+
+.nav_footer a{
+	text-decoration: none;
+	color:#efefee;
+}
+
+::marker{
+    color: #747474;
+}
+
+.nav_footer_ul{
+	gap: 2em;  
+  list-style-type: none;
+  font-size: 1.1em;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  }
+
+.nav_footer_ul li{
+	writing-mode: vertical-rl;
+	margin: 0em;
+	}	
+
+.nav_footer_ul a.nav_inner{
+	letter-spacing:0.1em;
+	}
+.nav_innerlist-text a{
+	font-size: .87em;
+	font-weight:400;
+	color:#cdcdcd;
+}
+
+.nav_innerlist-text {
+	padding: 0;
+	gap: .6em;
+	display: grid;
+	margin-right: .75em;
+}
+
+.nav_footer a:hover{
+	color: #aaa;
+}
+
+.footer_copy{
+	font-size: .9em;
+	margin-top: 4em;
+	color:#ffffff;
+	text-align: center;
+	font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.footer_sns{
+	border: top 1px solid #fff;
+	background-color: #323131;
+	color:#fff;
+	padding: 0em 6.5em 1em 6.5em;
+	line-height: 1;
+	display: flex;
+	justify-content: space-between;
+}
+
+.pagetop{
+	  display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.3em; /* 矢印とテキストの間隔 */
+    margin-left: auto; /* 右寄せ */
+    cursor: pointer;
+    font-weight: bold;
+	background-color: #FFF;
+	border-radius: 15em;
+	padding: .5em .8em;
+	}
+
+.pagetop a{
+	text-decoration: none;
+	color:#3A2F21;
+}
+	
+.pagetop .arrow {
+    font-size: 1.2em;
+	display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.pagetop:hover{
+    animation: bounce-up 0.6s infinite alternate;
+	background-color: #f2e52d ;
+}
+
+@keyframes bounce-up {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-5px);
+    }
+}
+
+/* ページ移動先共通 */
+.header_top img{
+	height: 50vh;
+	width: 100%;
+	object-fit: cover;
+}
+.page_title{
+	text-align:center;
+	margin: auto;
+	margin-top: 4rem;
+}
+
+.page_title_en{
+	font-size: 3.5rem;
+	text-orientation: upright;
+	margin-bottom: -5.5rem;
+}
+
+.page_title_jp{
+	font-size: 1rem;
+	font-weight: 400;
+	 position: relative;
+  display: inline-block;
+  padding: 0 55px;
+   z-index: -1;
+}
+
+.page_title_jp:before, .page_title_jp:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 45px;
+  height: 1px;
+  background-color: #4f3f2b;
+}
+
+.page_title_jp:before {
+  left:0;
+}
+.page_title_jp:after {
+  right: 0;
+}
+
+
+
+
+/*newsページ*/
+.news_inline{
+	display: -webkit-box; 
+	display: flex;
+	padding: 4em 6.5em;
+	margin-bottom: 6em;
+}
+
+.news__haikei{
+	vertical-align: middle;
+	background-image: url("../images/butta_logo_blown.png");
+	background-repeat: no-repeat;
+	background-size: 30%;
+	background-position: center;
+	background-color: rgba(255, 255, 255, .5);
+	background-blend-mode:lighten ;
+
+}
+
+
+.news_block{
+	background-image: url("../images/newsback.png");
+	background-repeat: no-repeat;                         
+  	background-position: center;
+	background-size: 100%;
+	position: relative;
+	width:100%;
+	height:120%;
+	vertical-align: middle;
+	padding: 1rem 2rem;
+	}
+
+.news_naiyou{
+	width: 100%;
+    top: 12px;
+    color: #5c4f42;  
+	padding: 0;
+}	
+
+.news_block ul li a {
+	text-decoration: none;
+	color:#5c4f42;
+	vertical-align: middle;
+}
+
+.news_naiyou p{
+	margin: 2rem 0;
+}
+
+
+
+/*INFOページ*/
+.shop_name{
+	margin: 2rem auto 0em auto;
+	font-size: 1.8rem;
+	padding-top: 2.2em;
+	color: #6b563b;
+	text-align: center;
+	width: 50%;
+	min-width: 50%;
+	height: fit-content;
+	background-image: url(../images/hanen.png);
+	background-repeat: no-repeat;
+	background-position: bottom -1px center;
+	background-size: 100%;
+}
+
+
+.shop_title{
+	font-size: 1rem;
+	margin: 0;
+	border-bottom: 1px solid #8977648d;
+}
+
+.page_shop{
+	padding: 1em 6.5em 5em 6.5em;
+}
+
+.shop_naiyou{
+	background-color: #fff;
+	border-radius: 1rem;
+	justify-content: center;
+	font-family:"游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.shop_inline{
+	padding: 3rem 4rem ;
+	margin: auto;
+	display: flex;
+
+	}
+
+.shop_info{
+	font-size: 0.9rem;
+	padding-left: 3rem;
+	text-align: left;
+	width: 50%;
+}
+
+.shop_block{
+	margin: 0 0 3rem 0;
+}
+
+.shop_table{
+	width: 100%;
+}
+
+.shop_table th{
+	vertical-align: top;
+	width: 20%;
+	padding: 1rem 0;
+	font-weight: 300;
+}
+
+.shop_table td{
+	padding: 1rem 0;
+	width: 55%;
+}
+
+.shop_table tr{
+	border-bottom: 1px solid #8977648d;
+}
+
+.shop_inline iframe {
+	width:50% ;
+}
+
+.sns{
+	padding: 5em 6.5em 7em 6.5em;
+}
+
+.instagram{
+	padding: 0rem 5rem;
+	text-align: center;
+	margin-bottom: 5rem;
+}
+
+.instagram ul{
+	display: flex;
+	list-style-type: none;
+	padding: 0%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.instagram li{
+	margin: 0.4rem 0.2rem;
+	width: 32%;
+}
+
+.instagram_photo {
+	overflow:hidden;
+}
+
+.instagram_photo a{
+	display:block;
+	 width: 100%;            
+    height: 100%;           
+    text-decoration: none;
+	background-color: #323131;
+}
+
+.instagram_photo img{
+	display: block;
+	width: 100%;
+    height: auto;
+}
+
+.instagram_photo img:hover{
+	transform:scale(1.04);
+	opacity:0.5;
+	transition:0.45s;
+}
+
+/*menuページ*/
+.menu_all{
+	padding: 4rem 0 0 0;
+}
+
+.menu_ul{
+	padding:0 8rem ;
+}
+
+.menu_navi{
+	display:flex;
+	justify-content: space-between;
+	background-color: #FFF;
+	border-radius: 0.5rem;
+	padding: 0.7rem 1rem;
+	gap:1rem;
+	margin-bottom: 2rem;
+}
+
+.menu_navi li{
+	display: grid;
+	padding: 0.2rem 3rem; 
+	background-color: #f2e52d ;
+	border: solid 2px #f2e52d ;
+	border-radius: 5rem;
+	list-style-type:none ;
+	width: 100%;
+	
+}
+
+.menu_navi a{
+	display: block;
+	width: 100%;
+	text-align: center;
+	list-style:none;
+	text-decoration: none;
+	color: #82715e;
+}
+
+.menu_navi li:hover{
+	background-color: #FFF;
+	color: #f2e52d ;
+}
+
+.menu_navi a:hover{
+	color: #f2e52d ;
+}
+
+.menu_title{
+	font-size: 2rem;
+	margin:0 0 -0.5rem 0;
+}
+
+.time{
+font-size: 1rem;
+font-weight: 500;
+color: #cc1b26;
+}
+
+.time2{
+font-size: 1rem;
+font-weight: 500;
+color: #f2e52d ;
+}
+
+.lunch_contents{
+	background-color: #fffdf5;
+	padding:4rem 12rem ;
+	margin-bottom: 3rem;
+}
+
+.happy_contents{
+	background-color: #fdfcf3;
+	border-radius: 0.5rem;
+	padding:4rem 8rem ;
+	margin: 4rem;
+}
+
+.dinner_contents{
+	background-color: #62626b;
+	padding:4rem 12rem ;
+	color: #FFF;
+}
+
+.drink_contents{
+	background-color: #fffdf5;
+	padding:4rem 12rem 8rem 12rem ;
+	
+}
+
+.category_title{
+	margin: 0;
+	padding-bottom: 0.5rem;
+	font-size: 1.1rem;
+	border-bottom:1px solid #4f3f2b ;
+}
+
+.menu_category{
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem 0 1rem 0;
+	font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.menu_block{
+	padding: 0em;
+}
+
+.menu_inline{
+	width: 45%;
+}
+
+.menu_item{
+	display: flex;
+	justify-content: space-between;
+	border-bottom:1px solid #dcd7d5 ;
+	padding: 0.8rem 0.3rem;
+}
+
+.menu_category_pic{
+	width: 40%;
+}
+
+.happy_contents img{
+	border-radius: 1rem;
+}
+
+.dinner_contents h4{
+	border-bottom:1px solid #ffffff ;
+}
+
+.dinner_contents li{
+	border-bottom:1px solid #8b8a99 ;
+}
+
+.drink_contents div{
+	gap: 3rem;
+	flex-wrap: wrap;
+}
+
+.drink_contents.menu_inline{
+	width:45vw ;
+}
+
+.menu_inline p{
+	font-size: 0.8rem;
+	color: #a29b93;
+}
+
+/*aboutページ*/
+
+.about_intro1{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+	padding: 4rem 0;
+}
+
+.about_intro2{
+		display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+	padding: 4rem 0 12rem 0;	
+}
+
+.tagline_pic{
+	width: 45%;
+	height: auto;
+	clip-path: inset(0 round 0 70px 0 0);
+}
+
+.tagline_pic2{
+	width: 45%;
+	height: auto;
+	clip-path: inset(0 round  70px 0 0 0);
+}
+
+.tagline{
+	width: 45%;
+	height: auto;
+	padding-top: 5rem;
+}
+.tagline p{
+	font-size: 2.8rem;
+	font-weight: 600;
+	letter-spacing: 2px;
+	line-height: 1.1;
+	margin:2rem 0;
+	background: linear-gradient(transparent 60%, #f2e52d  60%);
+	width: fit-content;
+	height: fit-content;
+	
+}
+
+.intro_block{
+	font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+	font-size: 1rem;
+	font-weight: 300;
+	padding-top: 5rem;
+	line-height: 2.6;
+	letter-spacing: 1px;
+	margin:0 auto;
+}
+
+.intro_midashi{
+	font-size: 0.9rem;
+	font-weight: 600;
+	margin-bottom: 0.3rem;
+	border-bottom: solid 1px #7c6430;
+	width: fit-content;
+}
+
+
+/*--------------------
+Media Queries（メディアクエリ）
+-----------------------------*/
+
+@media screen and (min-width:480px) and (max-width:900px) {
+/* タブレットサイズ／スマホ横画面サイズ：480px～768px */
+
+.wrapper {
+	width: 100%;
+}
+
+
+.header_side_hamburger{
+	width: 0;
+	height: 100%;
+	background-image: none;
+}
+
+body {
+  overflow-y: auto;
+}
+
+.logo {
+	margin: 0 auto ;
+	margin-bottom: 0.3rem;
+	max-width:250px;
+	}
+
+.logo a{
+	display: block;
+	max-width:250px;
+	max-height: 250px;
+}
+
+
+.nav_sns{
+	margin: 3rem auto 0 auto;
+	max-width:200px;
+	font-size: 1.1rem;
+}
+
+.footer_copy{
+	margin: auto;
+}
+
+.hamburger-menu__input {
+  display: none;
+}
+
+.nav_main_hamurger{
+	align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	left: 0;
+	position: fixed; 
+	transform: translateX(-100%);
+	transition: 0.3s;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+}
+
+
+  #hamburger:checked ~ .nav_main_hamurger{
+    transform: translateX(0%);
+    transition: 0.3s;
+  }
+
+.hamburger-menu_bg {
+  background-image: url(../images/navbackground.png); 
+  cursor: pointer;
+  display: none;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+.nav_main_hamurger ul{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin:auto;
+	padding:3rem 8rem;
+	width: 60%;
+}
+
+.nav_main_hamurger ul li a {
+	color:#fff;
+	text-decoration: none;
+	font-size:1.2em;
+	font-weight: medium;
+	}
+
+main{
+	margin:0px;
+	width:100%;
+}
+
+.hamburger-menu_button{
+	align-items: center;
+	appearance: none;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	height:55px;
+	justify-content: center;
+	width: 55px;
+	background-color: #C20E1A;
+	border-radius: 5px;
+	
+}
+
+.hamburger-menu_button-mark {
+  background-color: #ffffff; 
+  display: block;
+  height: 3px;
+  transition: 0.3s; 
+  width: 40px; 
+  
+}
+
+#hamburger:checked
+    ~ .hamburger-menu_button
+    .hamburger-menu_button-mark:nth-of-type(1) {
+    transform: translate(2px, 1px) rotate(45deg); 
+    transform-origin: 0%;
+  }
+
+  #hamburger:checked
+    ~ .hamburger-menu_button
+    .hamburger-menu_button-mark:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  #hamburger:checked
+    ~ .hamburger-menu_button
+    .hamburger-menu_button-mark:nth-of-type(3) {
+    transform: translate(2px, 3px) rotate(-45deg); 
+    transform-origin: 0%;
+  }
+
+  #hamburger:checked ~ .main_top{
+	overflow: hidden;
+}
+
+/*news*/
+.news{
+	padding: 1rem;
+}
+
+.article_news{
+	display: block;
+}
+
+.news__block ul li a{
+	font-size: 1.4rem;
+}
+
+.news__block{
+	width: 90%;
+}
+
+/*about*/
+.about__all{
+	display: block;
+	padding-left: 0;
+}
+
+.about__block{
+	position: static;
+	width: 100%;
+}
+
+.about__block p{
+	font-size: 1.1rem;
+}
+
+.about_tenpo{
+	width: 100%;
+}
+
+.about_tenpo img{
+	border-radius: 10px;
+	width: 95vw;
+}
+.about__block::after{
+	display: none;
+}
+
+/*menu*/
+.t-menu__block ul{
+	display: block;
+	flex-wrap: nowrap;
+}
+
+.t-menu__block li{
+	margin: 0 auto;
+	width: 400px;
+	height: 400px;
+}
+
+/*access*/
+.info__block{
+	display: block;
+	padding:0;
+}
+
+
+.info__text{
+	position: static;
+	width: 100%;
+}
+
+.info_midashi-t{
+	font-size: 1.5rem;
+}
+
+.info__blocktext{
+	margin-top: 2rem;
+	font-size: 1.2rem;
+}
+
+.googlemaps{
+	position: static;
+}
+
+.googlemaps iframe{
+	position: static;
+}
+
+/*footer*/
+.footer_block_all{
+	padding: 2rem 2rem 0 2rem;
+}
+
+.footer_sns{
+	padding: 2rem;
+}
+
+.footer_block_right{
+	width: 100%;
+}
+
+.footer_block_right img{
+	width: 60%;
+}
+
+
+/*newsページ*/
+.news_inline{
+	padding: 2rem;
+}
+
+/*shopページ*/
+.page_shop{
+	padding: 2rem;
+}
+
+.shop_name{
+	font-size: 1.3rem;
+}
+
+.shop_info{
+	padding-left: 2rem;
+}
+
+.shop_inline iframe{
+	height: stretch;
+}
+
+.instagram{
+	padding: 0;
+}
+
+/*menuページ*/
+.menu_ul{
+	padding: 0 ;
+}
+
+.menu_navi{
+	border-radius: 0;
+}
+
+.menu_navi li{
+	padding: 0.2rem 1rem;
+}
+
+.lunch_contents{
+	background-color: #fffdf5;
+	padding:4rem ;
+	margin-bottom: 3rem;
+}
+
+.happy_contents{
+	background-color: #fdfcf3;
+	border-radius: 0.5rem;
+	padding:2rem ;
+	margin: 2rem;
+}
+
+.dinner_contents{
+	background-color: #62626b;
+	padding:4rem  ;
+	color: #FFF;
+}
+
+.drink_contents{
+	background-color: #fffdf5;
+	padding:4rem;
+	
+}
+
+.menu_category_pic{
+	width: 50%;
+}
+
+/*aboutページ*/
+.tagline p{
+	font-size: 2rem;
+}
+
+.about_intro1{
+	padding: 2rem;
+}
+
+.about_intro2{
+	padding: 4rem 2rem 6rem 2rem;
+}
+
+.tagline_pic{
+	width: 45%;
+	margin: 0 auto;
+	clip-path: none;
+
+}
+
+.tagline_pic img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	border-radius: 1rem;
+}
+
+.tagline_pic2{
+	width: 45%;
+	clip-path: none;
+	margin: 0 auto;
+}
+
+.tagline_pic2 img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	border-radius: 1rem;
+}
+
+.tagline{
+	width: 50%;
+	padding-top: 0;
+}
+
+.tagline p{
+	margin: 1rem 0;
+}
+
+.intro_block{
+	padding-top: 2rem;
+}
+
+.about_intro2 div{
+	padding-top: 0;
+}
+
+}
+
+
+
+
+@media screen and (max-width:479px) {
+/* スマホサイズ：479px以下 */
+p{
+	font-size: 0.9em;/
+}
+
+.wrapper {
+	width: 100%;
+}
+
+.keylogo img{
+	height: auto;
+}
+
+.header_side_hamburger{
+	background-image: none;
+	width: 0;
+}
+
+body {
+  overflow-y: auto;
+}
+
+.logo {
+	margin: 0 auto ;
+	margin-bottom: 0.3rem;
+	max-width:150px;
+	}
+
+.logo a{
+	display: block;
+	max-width:150px;
+	max-height: 150px;
+}
+
+
+.nav_sns{
+	margin: 1rem auto 0 auto;
+	max-width:200px;
+	font-size: 1rem;
+}
+
+.footer_copy{
+	margin: auto;
+}
+
+.header_side_hamburger{
+	padding: 1rem;
+}
+
+.hamburger-menu__input {
+  display: none;
+}
+
+.nav_main_hamurger{
+	align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	left: 0;
+	position: fixed; 
+	transform: translateX(-100%);
+	transition: 0.3s;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+}
+
+
+  #hamburger:checked ~ .nav_main_hamurger{
+    transform: translateX(0%);
+    transition: 0.3s;
+  }
+
+.hamburger-menu_bg {
+  background-image: url(../images/navbackground.png); 
+  cursor: pointer;
+  display: none;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+.nav_main_hamurger ul{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin:auto;
+	padding:2rem 5rem;
+}
+
+.nav_main_hamurger ul li a {
+	color:#fff;
+	text-decoration: none;
+	font-size:1em;
+	font-weight: medium;
+	}
+
+main{
+	margin:0px;
+	width:100%;
+}
+
+.hamburger-menu_button{
+	align-items: center;
+	appearance: none;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	height:60px;
+	justify-content: center;
+	width: 60px;
+	background-color: #C20E1A;
+	border-radius:30px;
+	
+}
+
+.hamburger-menu_button-mark {
+  background-color: #ffffff; 
+  display: block;
+  height: 3px;
+  transition: 0.3s; 
+  width: 33px; 
+  
+}
+
+#hamburger:checked
+    ~ .hamburger-menu_button
+    .hamburger-menu_button-mark:nth-of-type(1) {
+    transform: translate(2px, -3px) rotate(45deg); 
+    transform-origin: 0%;
+  }
+
+  #hamburger:checked
+    ~ .hamburger-menu_button
+    .hamburger-menu_button-mark:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  #hamburger:checked
+    ~ .hamburger-menu_button
+    .hamburger-menu_button-mark:nth-of-type(3) {
+    transform: translate(2px, 3px) rotate(-45deg); 
+    transform-origin: 0%;
+  }
+
+  #hamburger:checked ~ .main_top{
+	overflow: hidden;
+}
+
+/*news*/
+.title_news{
+	margin-top: 0;
+}
+
+.news{
+	padding: 1rem;
+}
+
+.article_news{
+	display: block;
+}
+
+.news__block ul li a{
+	font-size: 1.3rem;
+	
+}
+
+.t-news-entry__item__inner{
+	display: block;
+	width:100%;
+}
+
+.t-entry-item__name{
+	width: 100%;
+}
+
+.news__block{
+	width: 90%;
+}
+
+.yazirushi{
+	display: none;
+}
+
+/*about*/
+.article_about{
+	margin-bottom: 0;
+}
+.about__all{
+	display: block;
+	padding-left: 0;
+}
+
+.about__block{
+	position: static;
+}
+
+.about_tenpo{
+	width: 100%;
+}
+
+.about_tenpo img{
+	border-radius: 10px;
+	width: 95vw;
+}
+.about__block::after{
+	display: none;
+}
+
+.about__block{
+	width: 100%;
+}
+
+/*menu*/
+.t-menu__block ul {
+    display:grid;
+	}
+
+/*shop*/
+
+.info__block{
+	display: block;
+	padding:0;
+}
+
+.article_info{
+	background-image: url(../images/infobackground_mv.png);
+	background-position: center;
+	background-size: cover;
+	height: fit-content;
+}
+
+.info__text{
+	position: static;
+	width: 100%;
+}
+
+.info__blocktext{
+	margin-top: 2rem;
+}
+
+.googlemaps{
+	position: static;
+}
+
+.googlemaps iframe{
+	position: static;
+}
+
+/*footer*/
+.footer_block_all{
+	background-color: #323231;
+	padding: 2em 2em 0em 2em;
+}
+
+.nav_footer_ul li{
+	writing-mode: horizontal-tb;
+}
+
+.nav_footer_ul{
+	gap: 0.5rem;
+	display: block;
+}
+
+.footer_block_right{
+	display: none;
+}
+
+.footer_block_left{
+display: block;
+}
+
+.footer_sns{
+	padding: 1rem 2rem;
+}
+
+
+/*newsページ*/
+.news_inline{
+	padding: 2rem 2rem;
+}
+
+.news_block{
+	background-size: unset;
+	position: static;
+}
+
+.news__haikei{
+	background-size: 100%;
+}
+
+/*infoページ*/
+.page_shop .page_title_en{
+	font-size: 3rem;
+}
+
+.page_shop{
+	padding: 1em 2em 3em 2em;
+}
+
+.shop_inline{
+	padding: 2rem;
+	display: block;
+}
+
+.shop_inline iframe{
+	aspect-ratio: 4/3;
+	width: 100%;
+	height: auto;
+	margin-bottom: 1rem;
+}
+
+.shop_info{
+	width: 100%;
+	font-size: 1rem;
+	padding-left: 0;
+}
+
+.shop_name{
+	font-size: 1.2rem;
+	width: 100%;
+	height: 100%;
+}
+
+.shop_naiyou{
+	border-radius: 0 0 1rem 1rem;
+}
+
+.sns{
+	padding: 1em 2em 3em 2em;
+}
+
+.instagram{
+	padding: 0;
+}
+
+.instagram li{
+	width: 30%;
+}
+
+/*menuページ*/
+.menu_ul{
+	padding: 0;
+}
+
+.menu_navi{
+	display: block;
+}
+
+.menu_navi li{
+	padding: 0.5rem 2rem;
+	gap: 0.5rem;
+	margin: 0.4rem 0;
+}
+
+.lunch_contents{
+	background-color: #fffdf5;
+	padding:3rem 4rem ;
+	margin-bottom: 3rem;
+}
+
+.happy_contents{
+	background-color: #fdfcf3;
+	border-radius: 0.5rem;
+	padding:3rem 2rem ;
+	margin: 2rem;
+}
+
+.dinner_contents{
+	background-color: #62626b;
+	padding:3rem 4rem ;
+	color: #FFF;
+}
+
+.drink_contents{
+	background-color: #fffdf5;
+	padding:3rem 2rem ;
+	
+}
+
+.happy_contents .menu_category{
+	display: block;
+}
+
+
+.menu_category{
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+
+
+.menu_inline{
+	width: 100%;
+	margin-top: 1rem;
+}
+
+.menu_category_pic{
+	width: 100%;
+	align-items: center;
+}
+
+/*aboutページ*/
+.tagline p{
+	font-size: 1.8rem;
+}
+
+.about_intro1{
+ display: block;
+}
+
+.about_intro2{
+	display: flex;
+	flex-direction: column-reverse;
+	padding: 4rem 0 6rem 0;
+}
+
+.tagline_pic{
+	width: 100%;
+	clip-path: none;
+}
+
+.tagline_pic2{
+	width: 80%;
+	clip-path: none;
+	margin: 0 auto;
+}
+
+.tagline_pic2 img{
+	border-radius: 1rem;
+}
+
+.tagline{
+	width: fit-content;
+	height: auto;
+	padding-top: 5rem;
+	margin: 0 2rem;
+}
+
+}
