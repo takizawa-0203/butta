@@ -12,7 +12,7 @@ html {
 }
 body {
 	min-width:320px;
-	margin:0;
+	margin:0!important;
 	color: #6b563b;
 	background-image:url(./background.png);
 	font-family: 'Arima','Momochidori Wide', 'Momochidori', 'zen', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
