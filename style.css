@@ -13,7 +13,7 @@ html {
 body {
 	min-width:320px;
 	color: #6b563b;
-	background-image:url(../images/background.png);
+	background-image:url(./background.png);
 	font-family: 'Arima','Momochidori Wide', 'Momochidori', 'zen', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 }
 img {
@@ -68,7 +68,7 @@ span{
 	position: fixed;
 	z-index: 9999;
 	padding:2rem 2rem;
-	background-image:url(../images/navbackground.png);
+	background-image:url(./navbackground.png);
 	}
 
 
@@ -157,7 +157,7 @@ main{
 	}
 
 .main_photo{
-	background-image: url("../images/Key_tenpo.jpg");
+	background-image: url("./Key_tenpo.jpg");
 	background-repeat: no-repeat;
 	background-size: cover; /* 画像を横幅いっぱいに表示 */
 	background-position: center; 
@@ -173,7 +173,7 @@ main{
 
 .article_news{
 	padding: 2em;
-	background-image: url("../images/newsback.png");
+	background-image: url("./newsback.png");
 	background-repeat: no-repeat;
 	 /* 画像を横幅いっぱいに表示 */
 	width:100%;                              
@@ -203,7 +203,7 @@ main{
 }
 
 .news_haikei{
-	background-image: url("../images/butta_logo_blown.png");
+	background-image: url("./butta_logo_blown.png");
 	text-align: center;
 	vertical-align: middle;
 	background-size: cover;
@@ -298,7 +298,7 @@ main{
   display: inline-block;
   width: 200px;
   height: 130px;
-  background-image: url(../images/gyouza.png);
+  background-image: url(./gyouza.png);
   background-repeat: no-repeat;
   background-size: contain;
   vertical-align: middle;
@@ -509,7 +509,7 @@ main{
 }
 
 .article_info{
-	background-image:url(../images/infobackground.png);
+	background-image:url(./infobackground.png);
 	background-size:cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -760,7 +760,7 @@ main{
 
 .news__haikei{
 	vertical-align: middle;
-	background-image: url("../images/butta_logo_blown.png");
+	background-image: url("./butta_logo_blown.png");
 	background-repeat: no-repeat;
 	background-size: 30%;
 	background-position: center;
@@ -771,7 +771,7 @@ main{
 
 
 .news_block{
-	background-image: url("../images/newsback.png");
+	background-image: url("./newsback.png");
 	background-repeat: no-repeat;                         
   	background-position: center;
 	background-size: 100%;
@@ -811,7 +811,7 @@ main{
 	width: 50%;
 	min-width: 50%;
 	height: fit-content;
-	background-image: url(../images/hanen.png);
+	background-image: url(./hanen.png);
 	background-repeat: no-repeat;
 	background-position: bottom -1px center;
 	background-size: 100%;
@@ -1208,7 +1208,7 @@ body {
   }
 
 .hamburger-menu_bg {
-  background-image: url(../images/navbackground.png); 
+  background-image: url(./navbackground.png); 
   cursor: pointer;
   display: none;
   height: 100vh;
@@ -1597,7 +1597,7 @@ body {
   }
 
 .hamburger-menu_bg {
-  background-image: url(../images/navbackground.png); 
+  background-image: url(./navbackground.png); 
   cursor: pointer;
   display: none;
   height: 100vh;
@@ -1755,7 +1755,7 @@ main{
 }
 
 .article_info{
-	background-image: url(../images/infobackground_mv.png);
+	background-image: url(./infobackground_mv.png);
 	background-position: center;
 	background-size: cover;
 	height: fit-content;
